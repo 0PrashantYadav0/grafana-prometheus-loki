@@ -50,4 +50,3 @@ docker run -d -p 3000:3000 --name=grafana grafana/grafana-oss
 ```bash
 docker run -d --name=loki -p 3100:3100 grafana/loki
 ```
-# grafana-prometheus-loki
