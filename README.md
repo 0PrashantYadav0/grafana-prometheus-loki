@@ -5,9 +5,10 @@
 - Basic Knowlege of Node.js and Express Framework
 - Basic to Intermediate knowledge in Docker and Containerization - [Learn Docker Containerization](https://learn.piyushgarg.dev/learn/docker)
 
-### Demo Server:
+### Server
 
-<img width="1440" alt="Screenshot 2025-04-11 at 11 18 18 PM" src="https://github.com/user-attachments/assets/d659a06f-6e58-4199-9097-88a43da66d61" />
+![Server Demo](https://github.com/user-attachments/assets/d659a06f-6e58-4199-9097-88a43da66d61)
+
 
 ### Installation and Setup
 
@@ -39,9 +40,9 @@ services:
       - ./prometheus.yml:/etc/prometheus/prometheus.yml
 ```
 
-#### Demo:
+#### Prometheus Demo
 
-<img width="1440" alt="Screenshot 2025-04-11 at 11 17 53 PM" src="https://github.com/user-attachments/assets/a55dc417-22e3-408c-b456-f9ce74e2d7f2" />
+![Prometheus Demo](https://github.com/user-attachments/assets/a55dc417-22e3-408c-b456-f9ce74e2d7f2)
 
 Great, The prometheus server is now up and running at PORT 9090
 
@@ -51,9 +52,9 @@ Great, The prometheus server is now up and running at PORT 9090
 docker run -d -p 3000:3000 --name=grafana grafana/grafana-oss
 ```
 
-#### Demo:
+### Grafana Demo
 
-<img width="1440" alt="Screenshot 2025-04-11 at 11 17 40 PM" src="https://github.com/user-attachments/assets/faf88a81-2764-45fd-b4f7-545a89168720" />
+![Grafana Demo](https://github.com/user-attachments/assets/faf88a81-2764-45fd-b4f7-545a89168720)
 
 ### 3. Setup Loki Server
 

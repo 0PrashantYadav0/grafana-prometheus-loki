@@ -9,7 +9,7 @@ const options = {
   transports: [
     new LokiTransport({
       host: "http://127.0.0.1:3100",
-      labels: { application: "my-app" },
+      labels: { application: "loki-server" },
     })
   ]
 };
