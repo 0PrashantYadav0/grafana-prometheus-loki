@@ -3,13 +3,15 @@ const { timeTakingProcess } = require('./utils')
 const client = require('prom-client')
 const responseTime = require('response-time');
 
-const { createLogger, transports } = require("winston");
+const { createLogger } = require("winston");
 const LokiTransport = require("winston-loki");
 const options = {
   transports: [
     new LokiTransport({
       host: "http://127.0.0.1:3100",
-      labels: { application: "loki-server" },
+      labels: {
+        application: "loki-server"
+      },
     })
   ]
 };
@@ -46,7 +48,6 @@ app.get('/', (req, res) => {
 })
 
 app.get('/slow', async (req, res) => {
-
   try {
     logger.info('Testing log message', {
       message: 'Hello, this is a test log message',
